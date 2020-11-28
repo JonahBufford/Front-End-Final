@@ -31,22 +31,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7daa0c6b-0054-47b8-8707-3109f477955b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/javascripts/delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/showBooks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/updateBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/tableNoControl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/addBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/deleteBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/findBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/showBooks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/updateBook.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +84,7 @@
       <updated>1606192975892</updated>
       <workItem from="1606192977042" duration="2890000" />
       <workItem from="1606273021330" duration="54752000" />
-      <workItem from="1606586020379" duration="9025000" />
+      <workItem from="1606586020379" duration="10144000" />
     </task>
     <servers />
   </component>
@@ -122,22 +108,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1606517382379" />
-    <state width="1222" height="171" key="GridCell.Tab.0.bottom" timestamp="1606599647242">
+    <state width="1222" height="171" key="GridCell.Tab.0.bottom" timestamp="1606602736070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1222" height="171" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1606599647242" />
-    <state width="1222" height="171" key="GridCell.Tab.0.center" timestamp="1606599647241">
+    <state width="1222" height="171" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1606602736070" />
+    <state width="1222" height="171" key="GridCell.Tab.0.center" timestamp="1606602736070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1222" height="171" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1606599647241" />
-    <state width="1222" height="171" key="GridCell.Tab.0.left" timestamp="1606599647241">
+    <state width="1222" height="171" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1606602736070" />
+    <state width="1222" height="171" key="GridCell.Tab.0.left" timestamp="1606602736070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1222" height="171" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1606599647241" />
-    <state width="1222" height="171" key="GridCell.Tab.0.right" timestamp="1606599647241">
+    <state width="1222" height="171" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1606602736070" />
+    <state width="1222" height="171" key="GridCell.Tab.0.right" timestamp="1606602736070">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1222" height="171" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1606599647241" />
+    <state width="1222" height="171" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1606602736070" />
     <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1606332423896">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

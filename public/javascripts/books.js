@@ -21,7 +21,7 @@ function postNewBook(isbn, author, price, title){
             console.log(this.statusText);
         }
     };
-    xhttp.open("POST", "http://localhost:5000/api/books", true);
+    xhttp.open("POST", "https://glacial-spire-25206.herokuapp.com/api/books", true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhttp.send(newBook);
@@ -56,7 +56,7 @@ function getBooks(urlEnd){
             $("#unusedISBNWarning").show();
         }
     };
-    xhttp.open("GET", "http://localhost:5000/api/books" + urlEnd , true);
+    xhttp.open("GET", "https://glacial-spire-25206.herokuapp.com/api/books" + urlEnd , true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhttp.send();
@@ -75,7 +75,7 @@ function getArray(usedISBNs){
            console.log(usedISBNs);
         }
     };
-    xhttp.open("GET", "http://localhost:5000/api/books", true);
+    xhttp.open("GET", "https://glacial-spire-25206.herokuapp.com/api/books", true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhttp.send();
@@ -122,7 +122,7 @@ function patchThis(isbn, newISBN, price, title, author, rowNumber){
             }
         }
     };
-    xhttp.open("PATCH", "http://localhost:5000/api/books/" + isbn, true);
+    xhttp.open("PATCH", "https://glacial-spire-25206.herokuapp.com/api/books/" + isbn, true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhttp.send(newBook);
@@ -144,7 +144,7 @@ function deleteThis(rowNumber){
             }
         }
     };
-    xhttp.open("DELETE", "http://localhost:5000/api/books/" + isbn, true);
+    xhttp.open("DELETE", "https://glacial-spire-25206.herokuapp.com/api/books/" + isbn, true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhttp.send();
