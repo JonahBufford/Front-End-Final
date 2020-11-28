@@ -56,7 +56,7 @@ function getBooks(urlEnd){
             $("#unusedISBNWarning").show();
         }
     };
-    xhttp.open("GET", "https://glacial-spire-25206.herokuapp.com/api/books" + urlEnd , true);
+    xhttp.open("GET", "http://localhost:5000/api/books" + urlEnd , true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhttp.send();
