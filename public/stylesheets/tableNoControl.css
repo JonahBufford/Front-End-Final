@@ -1,0 +1,3 @@
+#bookList tr td:last-child, #bookList tr th:last-child{
+    display: none;
+}

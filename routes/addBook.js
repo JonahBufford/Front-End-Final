@@ -16,39 +16,39 @@ router.get('/', function(request, response, next) {
         '               <meta name="author" content="Carlos Arias"> \n' +
         '               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>\n' +
         '               <script type="text/javascript" src="/javascripts/books.js"></script>' +
-        '               <script type="text/javascript" src="/javascripts/showBooks.js"></script>' +
         ' \n' +
-        '               <title>All Book Functions</title> \n' +
+        '               <title>Add Book</title> \n' +
         '               <!-- Bootstrap core CSS --> \n' +
         '               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> \n' +
         '               <link rel="stylesheet" type="text/css" href="../stylesheets/style.css"> \n' +
         '       </head> \n' +
-        '        <body> \n' +'<ul class="nav">\n' +
-                '    <li class="nav-item">\n' +
-                '        <a class="nav-link" href="/">Home</a>\n' +
-                '    </li>\n' +
-                '    <li class="nav-item">\n' +
-                '        <a class="nav-link" href="books">Books</a>\n' +
-                '    </li>\n' +
-                '    <li class="nav-item">\n' +
-                '        <a class="nav-link" href="addBook">Add a Book</a>\n' +
-                '    </li>\n' +
-                '    <li class="nav-item">\n' +
-                '        <a class="nav-link" href="showBooks">List of Books</a>\n' +
-                '    </li>\n' +
-                '    <li class="nav-item">\n' +
-                '        <a class="nav-link" href="updateBook">Update Book</a>\n' +
-                '    </li>\n' +
-                '    <li class="nav-item">\n' +
-                '        <a class="nav-link" href="findBook">Find Book</a>\n' +
-                '    </li>\n' +
-                '    <li class="nav-item">\n' +
-                '        <a class="nav-link" href="deleteBook">Delete Book</a>\n' +
-                '    </li>\n' +
-                '</ul>' +
+        '        <body> \n' +
+                    '<ul class="nav">\n' +
+                    '    <li class="nav-item">\n' +
+                    '        <a class="nav-link" href="/">Home</a>\n' +
+                    '    </li>\n' +
+                    '    <li class="nav-item">\n' +
+                    '        <a class="nav-link" href="books">Books</a>\n' +
+                    '    </li>\n' +
+                    '    <li class="nav-item">\n' +
+                    '        <a class="nav-link" href="addBook">Add a Book</a>\n' +
+                    '    </li>\n' +
+                    '    <li class="nav-item">\n' +
+                    '        <a class="nav-link" href="showBooks">List of Books</a>\n' +
+                    '    </li>\n' +
+                    '    <li class="nav-item">\n' +
+                    '        <a class="nav-link" href="updateBook">Update Book</a>\n' +
+                    '    </li>\n' +
+                    '    <li class="nav-item">\n' +
+                    '        <a class="nav-link" href="findBook">Find Book</a>\n' +
+                    '    </li>\n' +
+                    '    <li class="nav-item">\n' +
+                    '        <a class="nav-link" href="deleteBook">Delete Book</a>\n' +
+                    '    </li>\n' +
+                    '</ul>' +
         '               <div class="container"> \n' +
-                '               <h1>Add New Book</h1><br> \n' +
-                '               <form id="newBookForm"> \n' +
+        '                   <h1>Add New Book</h1><br> \n' +
+        '                   <form id="newBookForm"> \n' +
         '                           <div class="form-group">\n' +
         '                               <label for="isbnNew">ISBN</label>\n' +
         '                               <input class="form-control" name="ISBN" id="isbnNew">\n' +
@@ -63,7 +63,7 @@ router.get('/', function(request, response, next) {
         '                           <div class="form-group">\n' +
         '                               <label for="authorNew">Author</label>\n' +
         '                               <input class="form-control" name="author" id="authorNew">\n' +
-        '                               <small id="authorFormWarning" class="form-text formWarning">* Please enter an author</small>\n' +
+        '                               <small id="authorFormWarning" class="form-text formWarning">* Please enter an author ISBN</small>\n' +
         '                           </div> \n' +
         '                           <div class="form-group">\n' +
         '                               <label for="priceNew">Price</label>\n' +
@@ -74,18 +74,6 @@ router.get('/', function(request, response, next) {
         '                               <button type="button" class="btn btn-primary" onclick="validateNewBook()">Submit</button>\n' +
         '                           </div> \n' +
         '                      </form>\n' +
-        '                      <div class="form-group">\n' +
-        '                           <label for="searchByISBN">Search by ISBN</label>\n' +
-        '                           <input class="form-control" name="ISBN" id="searchByISBN">\n' +
-        '                           <button type="button" class="btn btn-primary" onclick="searchByISBN()">Search</button>\n' +
-        '                           <small id="isbnSearchWarning" class="form-text formWarning">* Please enter a valid isbn</small>\n' +
-        '                      </div> \n' +
-        '                      <div class="form-group">\n' +
-        '                           <label for="searchByAuthor">Search by Author</label>\n' +
-        '                           <input class="form-control" name="ISBN" id="searchByAuthor">\n' +
-        '                           <button type="button" class="btn btn-primary" onclick="searchByAuthor()">Search</button>\n' +
-        '                           <small id="authorSearchWarning" class="form-text formWarning">* Please enter an author</small>\n' +
-        '                      </div> \n' +
         '               </div>\n' +
         '               <div id="output"    ></div> \n' +
         '     </body>\n'

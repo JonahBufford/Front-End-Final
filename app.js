@@ -5,8 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var booksRouter = require('./routes/books');
+var addBookRouter = require('./routes/addBook');
+var showBooksRouter = require('./routes/showBooks');
+var updateBookRouter = require('./routes/updateBook');
+var findBookRouter = require('./routes/findBook');
+var deleteBookRouter = require('./routes/deleteBook');
 
 var app = express();
 
@@ -21,8 +25,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/books', booksRouter);
+app.use("/addBook", addBookRouter);
+app.use("/showBooks", showBooksRouter);
+app.use("/updateBook", updateBookRouter);
+app.use("/findBook", findBookRouter);
+app.use("/deleteBook", deleteBookRouter);
 
 var $ = require('jquery');
 
