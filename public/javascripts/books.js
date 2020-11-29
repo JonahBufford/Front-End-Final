@@ -142,6 +142,9 @@ function deleteThis(rowNumber){
                     usedISBNs[i] = "";
                 }
             }
+            if(window.location.href.indexOf("deleteBook") != -1){
+                $("#deleteButton").hide();
+            }
         }
     };
     xhttp.open("DELETE", "https://glacial-spire-25206.herokuapp.com/api/books/" + isbn, true);
