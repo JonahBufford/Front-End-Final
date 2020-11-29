@@ -17,7 +17,11 @@ function validateUpdateForm(){
     let price = $("#priceUpdate").val();
     let title = $("#titleUpdate").val();
     let isbnValid = checkISBN(isbn);
+    console.log("ISBN Valid:");
+    console.log(isbnValid);
     let used = checkISBNUsed(newISBN);
+    console.log("ISBN used:");
+    console.log(used);
     if(author == ""){
         $("#authorFormWarning").show();
     }
@@ -49,6 +53,7 @@ function validateUpdateForm(){
         $("#usedISBNWarning").hide();
     }
     if(!used && isbnValid && author != "" && price != "" && title != ""){
+        console.log("patching");
         patchThis(isbn, newISBN, price, title, author, -1);
     }
 }
