@@ -22,6 +22,12 @@ function validateUpdateForm(){
     let used = checkISBNUsed(newISBN);
     console.log("ISBN used:");
     console.log(used);
+    console.log("author");
+    console.log(author);
+    console.log("ISBN used:");
+    console.log(used);
+    console.log("ISBN used:");
+    console.log(used);
     if(author == ""){
         $("#authorFormWarning").show();
     }
@@ -50,9 +56,10 @@ function validateUpdateForm(){
         $("#usedISBNWarning").show();
     }
     else{
+        used = false;
         $("#usedISBNWarning").hide();
     }
-    if(!used && isbnValid && author != "" && price != "" && title != ""){
+    if((!used || newISBN.valueOf() == isbn.valueOf()) && isbnValid && author != "" && price != "" && title != ""){
         console.log("patching");
         patchThis(isbn, newISBN, price, title, author, -1);
     }
