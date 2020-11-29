@@ -117,7 +117,7 @@ function patchThis(isbn, newISBN, price, title, author, rowNumber){
                 updateRow(newISBN,author,price,title,rowNumber);
             }
             else{
-                alert("Book added to database");
+                alert("Book updated in database");
                 document.getElementById("updateBookForm").reset();
             }
         }
