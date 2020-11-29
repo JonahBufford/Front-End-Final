@@ -47,7 +47,7 @@ router.get('/', function(request, response, next) {
         '    </li>\n' +
         '</ul>' +
         '               <div class="container"> \n' +
-        '                   <h1>Search for Book</h1><br> \n' +
+        '                   <h1>Update Books</h1><br> \n' +
         '                      <div class="form-group">\n' +
         '                           <label for="searchByISBN">Search by ISBN</label>\n' +
         '                           <input class="form-control" name="ISBN" id="searchByISBN">\n' +
