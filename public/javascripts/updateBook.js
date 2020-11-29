@@ -1,7 +1,5 @@
 function fillUpdateForm(data){
     $("#unusedISBNWarning").hide();
-    console.log(data);
-    console.log(data[0]["ISBN"]);
     $("#originalISBN").val(data[0]["ISBN"]);
     $("#isbnUpdate").val(data[0]["ISBN"]);
     $("#priceUpdate").val(data[0]["price"]);
@@ -11,6 +9,7 @@ function fillUpdateForm(data){
 }
 
 function validateUpdateForm(){
+    console.log("validated");
     let newISBN = $("#isbnUpdate").val();
     let isbn = $("#originalISBN").val();
     isbn = isbn.toString();
